@@ -19,78 +19,52 @@
   box-sizing: border-box;
 }
 
-/* Mobile Layout */
 main {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
 }
 
-.img-mobile {
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-}
-.subscribe-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 2rem;
+.sub-container {
+  margin-top: 5rem;
+  padding: 1rem;
 }
 
 h1 {
   color: var(--dark-slate-grey);
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-top: 2rem;
 }
 
 p {
   color: var(--dark-slate-grey);
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
+  margin-top: 1rem;
+  line-height: 22px;
+  font-size: 1rem;
 }
 
-.sub-text{
-  margin: 1px 0 1px 0;
-}
-
-.list-container {
-  display: flex;
-  gap: 1rem;
-}
-
-.text-email {
+span {
   color: var(--dark-slate-grey);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 0.8rem;
 }
 
 button {
   background-color: var(--dark-slate-grey);
   border: none;
-  border-radius: 0.3rem;
+  border-radius: 0.7rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: white;
-  height: 3rem;
-  margin-top: 0.8rem;
+  height: 4rem;
+  margin-top: 21rem;
+  width: 100%;
+  font-size: 1rem;
 }
 
-input {
-  height: 3rem;
-  border-radius: 0.3rem;
-  color: var(--grey);
-  border: solid 0.1rem;
-  padding-left: 1rem;
-  font-family: "Roboto", sans-serif;
-  color: var(--grey);
-}
-
-
-/* Desktop layout */
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   main {
     background-color: var(--dark-slate-grey);
     display: flex;
@@ -101,21 +75,25 @@ input {
   h1 {
     font-size: 3.5rem;
   }
-  
   .sub-container {
     background-color: var(--white);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    width: 50rem;
+    flex-direction: column;
     border-radius: 2rem;
+    margin: 0;
+    padding: 4rem;
+    width: 35rem;
   }
-
-  .img-mobile {
-    content: url("../assets/images/illustration-sign-up-desktop.svg");
-    order: 1;
-    width: 350px;
-    height: 500px;
+  button {
+    background-color: var(--dark-slate-grey);
+    border: none;
+    border-radius: 0.7rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+    height: 4rem;
+    width: 100%;
+    margin-top: 3rem;
+    font-family: 1rem;
   }
 }
