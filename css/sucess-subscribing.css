@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   /* Colors */
-
-  --tomato: hsl(4, 100%, 67%);
+  --Tomato: hsl(4, 100%, 67%);
+  --Gradient: hsl(335, 100%, 65%), hsl(4, 100%, 67%);
   --dark-slate-grey: hsl(234, 29%, 20%);
   --charcoa-grey: hsl(235, 18%, 26%);
   --grey: hsl(231, 7%, 60%);
@@ -64,6 +64,11 @@ button {
   font-size: 1rem;
 }
 
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, hsl(335, 100%, 65%) -70%, hsl(4, 100%, 67%) 100%);
+}
+
 @media (min-width: 768px) {
   main {
     background-color: var(--dark-slate-grey);
@@ -95,5 +100,9 @@ button {
     width: 100%;
     margin-top: 3rem;
     font-family: 1rem;
+  }
+  button:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, hsl(335, 100%, 65%) -70%, hsl(4, 100%, 67%) 100%);
   }
 }

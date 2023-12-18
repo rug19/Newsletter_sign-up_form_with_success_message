@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   /* Colors */
-
   --tomato: hsl(4, 100%, 67%);
   --dark-slate-grey: hsl(234, 29%, 20%);
   --charcoa-grey: hsl(235, 18%, 26%);
@@ -76,6 +75,7 @@ button {
   color: white;
   height: 3rem;
   margin-top: 0.8rem;
+  cursor: pointer;
 }
 
 input {
@@ -102,6 +102,7 @@ input {
     font-size: 3.5rem;
   }
   
+
   .sub-container {
     background-color: var(--white);
     display: flex;
