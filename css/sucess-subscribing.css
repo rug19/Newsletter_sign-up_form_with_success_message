@@ -19,24 +19,19 @@
   box-sizing: border-box;
 }
 
-main {
-  min-height: 100vh;
-}
-
-.sub-container {
+.success-container {
   margin-top: 5rem;
   padding: 1rem;
 }
 
-h1 {
+.success-title {
   color: var(--dark-slate-grey);
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-size: 2.5rem;
   margin-top: 2rem;
 }
-
-p {
+.success-text {
   color: var(--dark-slate-grey);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -45,13 +40,13 @@ p {
   font-size: 1rem;
 }
 
-span {
+.success-span {
   color: var(--dark-slate-grey);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
-button {
+.success-btn {
   background-color: var(--dark-slate-grey);
   border: none;
   border-radius: 0.7rem;
@@ -64,7 +59,7 @@ button {
   font-size: 1rem;
 }
 
-button:hover {
+.success-btn:hover {
   cursor: pointer;
   background: linear-gradient(90deg, hsl(335, 100%, 65%) -70%, hsl(4, 100%, 67%) 100%);
 }
@@ -77,10 +72,10 @@ button:hover {
     align-items: center;
   }
 
-  h1 {
+  .success-title {
     font-size: 3.5rem;
   }
-  .sub-container {
+  .success-container {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -89,7 +84,7 @@ button:hover {
     padding: 4rem;
     width: 35rem;
   }
-  button {
+  .success-btn {
     background-color: var(--dark-slate-grey);
     border: none;
     border-radius: 0.7rem;
@@ -101,7 +96,7 @@ button:hover {
     margin-top: 3rem;
     font-family: 1rem;
   }
-  button:hover {
+  .success-btn:hover {
     cursor: pointer;
     background: linear-gradient(90deg, hsl(335, 100%, 65%) -70%, hsl(4, 100%, 67%) 100%);
   }
