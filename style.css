@@ -174,7 +174,7 @@ input {
   }
 
   .img-mobile {
-    content: url("../assets/images/illustration-sign-up-desktop.svg");
+    content: url("./assets/images/illustration-sign-up-desktop.svg");
     order: 1;
     width: 350px;
     height: 500px;
