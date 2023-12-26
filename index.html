@@ -6,39 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Newsletter sign-up form with success message</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Main-container -->
   <main>
-    <!-- Sub-container -->
-    <div class="sub-container">
-      <!-- Image -->
-      <img class="img-mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-      <!-- Sign-up form start -->
-      <div class="subscribe-container">
-        <h1>Stay updated!</h1>
-        <p class="sub-text">Join 60,000+ product managers receiving monthly updates on:</p>
-        <div class="list-container">
-          <img src="./assets/images/icon-list.svg" alt="">
-          <p>Product discovery and building what matters</p>
+    <div id="main-container">
+      <div class="sub-container" >
+        <img class="img-mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
+        <div class="subscribe-container">
+          <h1>Stay updated!</h1>
+          <p class="sub-text">Join 60,000+ product managers receiving monthly updates on:</p>
+          <div class="list-container">
+            <img src="./assets/images/icon-list.svg" alt="">
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="list-container">
+            <img src="./assets/images/icon-list.svg" alt="">
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="list-container">
+            <img src="./assets/images/icon-list.svg" alt="icon-list">
+            <p>And much more!</p>
+          </div>
+
+          <div class="email-validation">
+            <p class="text-email">Email address</p>
+            <span id="error-message" hidden>Valid email required</span>
+          </div>
+          <input id="email" type="email" placeholder="email@company.com">
+          <button id="submit-btn" onclick="formValid()">Subscribe to monthly newsletter</button>
         </div>
-        <div class="list-container">
-          <img src="./assets/images/icon-list.svg" alt="">
-          <p>Measuring to ensure updates are a success</p>
-        </div>
-        <div class="list-container">
-          <img src="./assets/images/icon-list.svg" alt="">
-          <p>And much more!</p>
-        </div>
-        <p class="text-email">Email address</p>
-        <input type="email" placeholder="email@company.com">
-        <button>Subscribe to monthly newsletter</button>
       </div>
     </div>
+
+    <!-- Success message start -->
+    <div id="success-container-main" hidden>
+      <div class="success-container">
+        <div>
+          <img class="success-img" src="/assets/images/icon-success.svg" alt="icon-success">
+        </div>
+        <h1 class="success-title">Thanks for subscribing!</h1>
+        <p class="success-text">A confirmation email has been sent to <span
+            class="success-span">ash@loremcompany.com.</span>
+          Please open it and click the button inside to confirm your subscription.</p>
+        <button class="success-btn" onclick="successForm()">Dismiss message</button>
+      </div>
     </div>
   </main>
+  <script src="./script.js"></script>
 </body>
 
 </html>

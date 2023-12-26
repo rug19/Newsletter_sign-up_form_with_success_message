@@ -10,9 +10,10 @@ The designs were created to the following widths:
 ## Colors
 
 ### Primary
--Gradient:  hsl(4, 100%, 67%) to hsl(335, 100%, 65%);
 
-- Tomato: hsl(4, 100%, 67%)
+--Gradient:  hsl(4, 100%, 67%) to hsl(335, 100%, 65%);
+
+--Tomato: hsl(4, 100%, 67%)
 
 ### Neutral
 
