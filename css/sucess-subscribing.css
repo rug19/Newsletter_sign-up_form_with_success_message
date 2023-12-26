@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  /* Colors */
+  --Tomato: hsl(4, 100%, 67%);
+  --Gradient: hsl(335, 100%, 65%), hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoa-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Font */
+  --font-family: "Roboto", sans-serif;
+  --Weights: 400, 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.sub-container {
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+h1 {
+  color: var(--dark-slate-grey);
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+p {
+  color: var(--dark-slate-grey);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-top: 1rem;
+  line-height: 22px;
+  font-size: 1rem;
+}
+
+span {
+  color: var(--dark-slate-grey);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+button {
+  background-color: var(--dark-slate-grey);
+  border: none;
+  border-radius: 0.7rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+  height: 4rem;
+  margin-top: 21rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, hsl(335, 100%, 65%) -70%, hsl(4, 100%, 67%) 100%);
+}
+
+@media (min-width: 768px) {
+  main {
+    background-color: var(--dark-slate-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  .sub-container {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    margin: 0;
+    padding: 4rem;
+    width: 35rem;
+  }
+  button {
+    background-color: var(--dark-slate-grey);
+    border: none;
+    border-radius: 0.7rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+    height: 4rem;
+    width: 100%;
+    margin-top: 3rem;
+    font-family: 1rem;
+  }
+  button:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, hsl(335, 100%, 65%) -70%, hsl(4, 100%, 67%) 100%);
+  }
+}
