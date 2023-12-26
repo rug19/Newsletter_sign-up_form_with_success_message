@@ -9,7 +9,7 @@ function formValid() {
   if (email === "" || !emailRegex.test(email)) {
     messageError.style.display = "block";
     successContainerMain.style.display = "none";
-    // Exibir sucesso se o e-mail for válido
+    // Exibir mensagem de sucesso se o e-mail for válido
   } else {
     messageError.style.display = "none";
     successContainerMain.style.display = "block";
