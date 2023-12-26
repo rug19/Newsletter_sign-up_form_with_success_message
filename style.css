@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   /* Colors */
-<<<<<<< HEAD
+  --Gradient: hsl(335, 100%, 65%), hsl(4, 100%, 67%);
   --tomato: hsl(4, 100%, 67%);
   --dark-slate-grey: hsl(234, 29%, 20%);
   --charcoa-grey: hsl(235, 18%, 26%);
@@ -67,6 +67,18 @@ p {
   font-size: 0.8rem;
 }
 
+.email-validation{
+  display: flex;
+  justify-content: space-between;
+}
+
+span{
+  color: var(--tomato);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
 button {
   background-color: var(--dark-slate-grey);
   border: none;
@@ -89,9 +101,56 @@ input {
   color: var(--grey);
 }
 
+/* Success container style mobile version */
+.success-container {
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.success-title {
+  color: var(--dark-slate-grey);
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+.success-text {
+  color: var(--dark-slate-grey);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-top: 1rem;
+  line-height: 22px;
+  font-size: 1rem;
+}
+
+.success-span {
+  color: var(--dark-slate-grey);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.success-btn {
+  background-color: var(--dark-slate-grey);
+  border: none;
+  border-radius: 0.7rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+  height: 4rem;
+  margin-top: 21rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.success-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, hsl(335, 100%, 65%) -70%, hsl(4, 100%, 67%) 100%);
+}
+
+
 
 /* Desktop layout */
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   main {
     background-color: var(--dark-slate-grey);
     display: flex;
@@ -120,38 +179,34 @@ input {
     width: 350px;
     height: 500px;
   }
-}
-=======
 
-  --tomato: hsl(4, 100%, 67%);
-  --dark-slate-grey: hsl(234, 29%, 20%);
-  --charcoa-grey: hsl(235, 18%, 26%);
-  --grey:hsl(231, 7%, 60%);
-  --white:hsl(0, 0%, 100%);
-
-  /* Font */
-  --font-family: 'Roboto', sans-serif;
-
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-main {
-    background-color:black;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.sub-container {
+  /* Success container style desketop version */
+  .success-title {
+    font-size: 3.5rem;
+  }
+  .success-container {
     background-color: var(--white);
-    width: 375px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    margin: 0;
+    padding: 4rem;
+    width: 35rem;
+  }
+  .success-btn {
+    background-color: var(--dark-slate-grey);
+    border: none;
+    border-radius: 0.7rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+    height: 4rem;
+    width: 100%;
+    margin-top: 3rem;
+    font-family: 1rem;
+  }
+  .success-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, hsl(335, 100%, 65%) -70%, hsl(4, 100%, 67%) 100%);
+  }
 }
->>>>>>> fe106fe (Add: Adicionando o layout do projeto mobile)
