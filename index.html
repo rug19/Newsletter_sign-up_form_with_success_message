@@ -14,9 +14,7 @@
   <main>
     <!-- Sub-container -->
     <div class="sub-container">
-      <!-- Image -->
-      <img class="img-mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-      <!-- Sign-up form start -->
+      <img class="img-mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
       <div class="subscribe-container">
         <h1>Stay updated!</h1>
         <p class="sub-text">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -29,14 +27,32 @@
           <p>Measuring to ensure updates are a success</p>
         </div>
         <div class="list-container">
-          <img src="./assets/images/icon-list.svg" alt="">
+          <img src="./assets/images/icon-list.svg" alt="icon-list">
           <p>And much more!</p>
         </div>
-        <p class="text-email">Email address</p>
+        <div class="email-validation">
+          <p class="text-email">Email address</p>
+          <span hidden>Valid email required</span>
+        </div>
+
+        <!-- Sign-up form start -->
         <input type="email" placeholder="email@company.com">
-        <button>Subscribe to monthly newsletter</button>
+        <button href="./success-subscribing.html">Subscribe to monthly newsletter</button>
       </div>
-    </div>
+
+      <!-- Success message start -->
+      <div hidden>
+        <div class="success-container">
+          <div>
+            <img class="success-img" src="/assets/images/icon-success.svg" alt="icon-success">
+          </div>
+          <h1 class="success-title">Thanks for subscribing!</h1>
+          <p class="success-text">A confirmation email has been sent to <span
+              class="success-span">ash@loremcompany.com.</span>
+            Please open it and click the button inside to confirm your subscription.</p>
+          <button class="success-btn">Dismiss message</button>
+        </div>
+      </div>
     </div>
   </main>
   <script src="./script.js"></script>
