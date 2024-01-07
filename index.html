@@ -8,33 +8,38 @@
   <title>Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <main>
     <div id="main-container">
-      <div class="sub-container" >
       <div class="sub-container">
         <img class="img-mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
         <div class="subscribe-container">
           <h1>Stay updated!</h1>
           <p class="sub-text">Join 60,000+ product managers receiving monthly updates on:</p>
-          <div class="list-container">
-            <img src="./assets/images/icon-list.svg" alt="">
-            <p>Product discovery and building what matters</p>
-          </div>
-          <div class="list-container">
-            <img src="./assets/images/icon-list.svg" alt="">
-            <p>Measuring to ensure updates are a success</p>
-          </div>
-          <div class="list-container">
-            <img src="./assets/images/icon-list.svg" alt="icon-list">
-            <p>And much more!</p>
-          </div>
-          <div class="email-validation">
-            <p class="text-email">Email address</p>
-            <span id="error-message" hidden>Valid email required</span>
-          </div>
-          <input id="email" type="email" placeholder="email@company.com">
-          <button id="submit-btn" onclick="formValid()">Subscribe to monthly newsletter</button>
+          <ul class="list-container-main">
+            <li class="list-container">
+              <img src="./assets/images/icon-list.svg" alt="icon-list">
+              <p>Product discovery and building what matters</p>
+            </li>
+            <li class="list-container">
+              <img src="./assets/images/icon-list.svg" alt="icon-list">
+              <p>Measuring to ensure updates are a success</p>
+            </li>
+            <li class="list-container">
+              <img src="./assets/images/icon-list.svg" alt="icon-list">
+              <p>And much more!</p>
+            </li>
+          </ul>
+          <!-- Formulário -->
+          <form id="myForm" action="#">
+            <div class="email-validation">
+              <label for="email">Email adress</label>
+              <span id="error-message" hidden>Valid email required</span>
+            </div>
+            <input id="email" type="email" placeholder="email@company.com">
+            <button class="btn-form" id="submit-btn">Subscribe to monthly newsletter</button>
+          </form>
         </div>
       </div>
     </div>
@@ -48,11 +53,11 @@
         <p class="success-text">A confirmation email has been sent to <span
             class="success-span">ash@loremcompany.com.</span>
           Please open it and click the button inside to confirm your subscription.</p>
-        <button class="success-btn" onclick="successForm()">Dismiss message</button>
+        <button id="myButton" class="success-btn" >Dismiss message</button>
       </div>
     </div>
   </main>
   <script src="./script.js"></script>
 </body>
-</html>
 
+</html>

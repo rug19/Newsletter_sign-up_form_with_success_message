@@ -51,8 +51,15 @@ p {
   font-weight: 400;
 }
 
-.sub-text{
+.sub-text {
   margin: 1px 0 1px 0;
+}
+
+.list-container-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem 0 1rem 0;
 }
 
 .list-container {
@@ -67,19 +74,20 @@ p {
   font-size: 0.8rem;
 }
 
-.email-validation{
+.email-validation {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0.4rem;
 }
 
-span{
+span {
   color: var(--tomato);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
 }
 
-button {
+.btn-form {
   background-color: var(--dark-slate-grey);
   border: none;
   border-radius: 0.3rem;
@@ -89,10 +97,29 @@ button {
   height: 3rem;
   margin-top: 0.8rem;
   cursor: pointer;
+  width: 100%;
+}
+
+.btn-form:hover{
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    hsl(335, 100%, 65%) -70%,
+    hsl(4, 100%, 67%) 100%
+  );
+}
+
+
+label {
+  color: var(--dark-slate-grey);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
 }
 
 input {
   height: 3rem;
+  width: 100%;
   border-radius: 0.3rem;
   color: var(--grey);
   border: solid 0.1rem;
@@ -144,10 +171,12 @@ input {
 
 .success-btn:hover {
   cursor: pointer;
-  background: linear-gradient(90deg, hsl(335, 100%, 65%) -70%, hsl(4, 100%, 67%) 100%);
+  background: linear-gradient(
+    90deg,
+    hsl(335, 100%, 65%) -70%,
+    hsl(4, 100%, 67%) 100%
+  );
 }
-
-
 
 /* Desktop layout */
 @media (min-width: 768px) {
@@ -161,7 +190,6 @@ input {
   h1 {
     font-size: 3.5rem;
   }
-  
 
   .sub-container {
     background-color: var(--white);
@@ -207,6 +235,10 @@ input {
   }
   .success-btn:hover {
     cursor: pointer;
-    background: linear-gradient(90deg, hsl(335, 100%, 65%) -70%, hsl(4, 100%, 67%) 100%);
+    background: linear-gradient(
+      90deg,
+      hsl(335, 100%, 65%) -70%,
+      hsl(4, 100%, 67%) 100%
+    );
   }
 
