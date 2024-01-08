@@ -101,7 +101,7 @@ span {
   width: 100%;
 }
 
-.btn-form:hover{
+.btn-form:hover {
   cursor: pointer;
   background: linear-gradient(
     90deg,
@@ -109,7 +109,6 @@ span {
     hsl(4, 100%, 67%) 100%
   );
 }
-
 
 label {
   color: var(--dark-slate-grey);
@@ -242,4 +241,4 @@ input {
       hsl(4, 100%, 67%) 100%
     );
   }
-
+}
