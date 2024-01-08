@@ -8,13 +8,13 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   //Evitar que o formulário seja enviado imediatamente
   event.preventDefault();
   //Exibir mensagem de erro se o e-mail estiver vazio ou não passar na verificação da expressão regular
-  if (email.value === " " || !emailRegex.test(email.value)) {
+  if (email.value === "" || !emailRegex.test(email.value)) {
     messageError.style.display = "block";
     successContainerMain.style.display = "none";
+    email.style.background = "red";
   } else {
     messageError.style.display = "none";
-    successContainerMain.style.display = "block";
-    mainContainer.style.display = "none";
+    
   }
 });
 
