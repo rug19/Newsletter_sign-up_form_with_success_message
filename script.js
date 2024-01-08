@@ -15,7 +15,8 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     email.style.background = "red";
   } else {
     messageError.style.display = "none";
-    
+    successContainerMain.style.display = "block";
+    mainContainer.style.display = "none";
   }
 });
 
