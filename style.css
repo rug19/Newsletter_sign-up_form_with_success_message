@@ -3,6 +3,7 @@
   /* Colors */
   --Gradient: hsl(335, 100%, 65%), hsl(4, 100%, 67%);
   --tomato: hsl(4, 100%, 67%);
+  --tomato-light: hsla(4, 80%, 76%, 0.973);
   --dark-slate-grey: hsl(234, 29%, 20%);
   --charcoa-grey: hsl(235, 18%, 26%);
   --grey: hsl(231, 7%, 60%);
