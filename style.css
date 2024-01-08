@@ -197,7 +197,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
     width: 50rem;
     border-radius: 2rem;
   }
@@ -242,4 +242,4 @@ input {
       hsl(4, 100%, 67%) 100%
     );
   }
-}
+
