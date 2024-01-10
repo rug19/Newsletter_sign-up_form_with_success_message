@@ -82,7 +82,7 @@ p {
 }
 
 span {
-  color: var(--tomato);
+  color: var(--tomato-light);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
