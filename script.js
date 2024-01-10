@@ -4,8 +4,7 @@ const email = document.getElementById("email");
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const messageError = document.getElementById("error-message");
 
-
-// Codigo antigo funcional 
+// Codigo antigo funcional
 
 // email.addEventListener('change', (e) => e.target.value);
 
@@ -39,7 +38,8 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     email.style.background = "red";
   } else {
     messageError.style.display = "none";
-    
+    successContainerMain.style.display = "block";
+    mainContainer.style.display = "none";
   }
 });
 
