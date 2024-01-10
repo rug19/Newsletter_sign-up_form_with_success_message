@@ -11,8 +11,9 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   if (email.value === "" || !emailRegex.test(email.value)) {
     messageError.style.display = "block";
     successContainerMain.style.display = "none";
-    email.style.color = "red";
-    email.style.background = "red";
+    //Trocar por class
+    email.style.color = "#e39c99";
+    email.style.background = "#ffe8e6";
   } else {
     messageError.style.display = "none";
     successContainerMain.style.display = "block";
