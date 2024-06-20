@@ -32,12 +32,12 @@
             </li>
           </ul>
           <!-- Formulário -->
-          <form id="myForm" action="#">
+          <form id="myForm" action="#" novalidate>
             <div class="email-validation">
               <label for="email">Email adress</label>
               <span id="error-message" hidden>Valid email required</span>
             </div>
-            <input id="email" type="text" placeholder="email@company.com">
+            <input id="email" name="email" type="text" placeholder="email@company.com" required>
             <button class="btn-form" id="submit-btn">Subscribe to monthly newsletter</button>
           </form>
         </div>
